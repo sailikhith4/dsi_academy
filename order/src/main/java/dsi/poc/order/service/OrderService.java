@@ -3,7 +3,7 @@ package dsi.poc.order.service;
 import java.util.List;
 import java.util.Optional;
 
-import dsi.poc.order.entity.OrderEntity;
+import dsi.poc.order.model.OrderEntity;
 
 public interface OrderService {
 	

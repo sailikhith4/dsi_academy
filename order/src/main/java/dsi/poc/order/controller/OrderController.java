@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import dsi.poc.order.entity.OrderEntity;
+import dsi.poc.order.model.OrderEntity;
 import dsi.poc.order.service.OrderServiceImpl;
 
 @RestController

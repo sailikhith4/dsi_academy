@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import dsi.poc.order.entity.OrderEntity;
+import dsi.poc.order.model.OrderEntity;
 import dsi.poc.order.repository.OrderJpaRepository;
 
 @Service

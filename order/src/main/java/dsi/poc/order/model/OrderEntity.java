@@ -1,4 +1,4 @@
-package dsi.poc.order.entity;
+package dsi.poc.order.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -31,7 +31,10 @@ public class OrderEntity {
 
 	public OrderEntity() {}
 
-	public OrderEntity(long order_id, String item_name, long mobile_no, String mail_id, String customer_name) {
+	public OrderEntity(long order_id, @NotEmpty(message = "Please provide item-name!") String item_name,
+			@NotNull(message = "please provide a mobile-number!") long mobile_no,
+			@Email @NotEmpty(message = "Please provide a mail_id!") String mail_id,
+			@NotEmpty(message = "Please provide a name!") String customer_name) {
 		super();
 		this.order_id = order_id;
 		this.item_name = item_name;
@@ -39,7 +42,6 @@ public class OrderEntity {
 		this.mail_id = mail_id;
 		this.customer_name = customer_name;
 	}
-
 	@Override
 	public String toString() {
 		return "OrderEntity [order_id=" + order_id + ", item_name=" + item_name + ", mobile_no=" + mobile_no
